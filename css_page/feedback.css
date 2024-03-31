@@ -1,0 +1,86 @@
+* {
+    /* margin: 0; */
+    /* padding: 0; */
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #383434;
+    background: #f8f4f4;
+    /* align-content: center; */
+    /* text-align: center; */
+    /* align-items: center; */
+}
+
+.container {
+    text-align: center;
+}
+
+.container h1 {
+    color: #063970;
+    /* align-items: center;
+    align-content: center; */
+    /* text-align: center; */
+}
+
+.form_group {
+    /* text-align: center; */
+    display: flex;
+    /* align-items: center;
+    align-content: center; */
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+input {
+    background: #e0e4dc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    padding: 8px;
+}
+
+.form_group .select {
+    font-weight: 100;
+}
+
+
+textarea {
+    border-radius: 5px;
+    background: #e0e4dc;
+}
+
+.forRating {
+    /* text-align: center; */
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    /* justify-content: center; */
+    /* justify-self: center; */
+    /* justify-items: center; */
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    /* justify-self: center; */
+    justify-items: center;
+    /* text-align: center;
+    align-items: center;
+    align-content: center; */
+}
+
+/* .forRating .rating .rateTo {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+} */
+.button {
+    color: #fff;
+    background: #008ec0;
+    padding: 8px 40px;
+    border-radius: 8px;
+    border: none;
+}

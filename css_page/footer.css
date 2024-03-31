@@ -1,0 +1,76 @@
+.footer {
+    background-image: url(../photos/blue-gradient-background.jpg);
+    padding: 30px 0px;
+    text-align: center;
+}
+
+.footer .row {
+    width: 100%;
+    margin: 0% 1%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 0.8em;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+.footer .row a:hover {
+    color: #47cdde;
+    filter: drop-shadow(0px 0px 20px #47cdde);
+    margin: 30px;
+}
+
+#facebook:hover {
+    color: #001efd;
+    filter: drop-shadow(0px 0px 20px #001efd)
+}
+
+#insta:hover {
+    color: #ff009d;
+    filter: drop-shadow(0px 0px 20px #ff009d)
+}
+
+#whatsapp:hover {
+    color: #10c000;
+    filter: drop-shadow(0px 0px 20px#10c000)
+}
+
+#twitter:hover {
+    color: #00d9ff;
+    filter: drop-shadow(0px 0px 20px #00d9ff)
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+@media (max-width:720px) {
+    .footer {
+        text-align: left;
+        padding: 5%;
+    }
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+
+    .footer .row a i {
+        margin: 0% 3%;
+    }
+}
