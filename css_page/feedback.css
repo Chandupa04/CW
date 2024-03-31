@@ -71,7 +71,12 @@ textarea {
     align-content: center; */
 }
 
-
+/* .forRating .rating .rateTo {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+} */
 .button {
     color: #fff;
     background: #008ec0;
