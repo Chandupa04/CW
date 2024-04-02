@@ -5,10 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css_page/feedback.css">
+    <script defer src="../js_file/activePage.js"></script>
+    <script defer src="../js_file/feedback.js"></script>
+
     <title>Document</title>
+    
 </head>
 
 <body>
+    <header>
+        <img src="../photos/logo.png" class="logo">
+        <nav class="navbar">
+            <a href="../html_page/home_page.html" >HOME</a>
+            <a href="../">GALLERY</a>
+            <a href="../">SHOP</a>
+            <a href="../">SITEMAP</a>
+            <a href="../html_page/feedback.html">FEEDBACK</a>
+            <a href="../">ABOUT</a>
+        </nav>
+        <a class="cart" href="#cart"><i class='bx bxs-cart'></i></a>
+    </header>
     <div class="container">
         <h1>Feedback Form</h1>
         <form id="feedbackform" action="#" method="post">
@@ -25,16 +41,16 @@
 
             <div class="form_group">
                 <label for="yes" class="select">Yes</label>
-                <input type="radio" name="option" value="yes">
+                <input type="radio" name="option1" value="yes" id="yes">
                 <label for="no" class="select">No</label>
-                <input type="radio" name="option" value="no">
+                <input type="radio" name="option1" value="no" id="no">
             </div>
             <h4>Was this website informative and easy to navigate through?</h4>
             <div class="form_group">
                 <label for="yes" class="select">Yes</label>
-                <input type="radio" name="option" id="yes">
+                <input type="radio" name="option2" value="yes" id="yes">
                 <label for="no" class="select">No</label>
-                <input type="radio" name="option" id="no">
+                <input type="radio" name="option2" value="no" id="no">
             </div>
             <div class="feedback_group">
                 <label for="feedback1">If "No", suggest any improvements for the future:</label>
@@ -79,9 +95,9 @@
             <h4>Would you recommend our services?</h4>
             <div class="form_group">
                 <label for="yes" class="select">Yes</label>
-                <input type="radio" name="option" id="yes">
+                <input type="radio" name="option3" id="yes">
                 <label for="no" class="select">No</label>
-                <input type="radio" name="option" id="no">
+                <input type="radio" name="option3" id="no">
             </div>
             <div class="updates_offers">
                 <label for="like">Would you like to receive updates about the website and any offers?</label>
@@ -94,10 +110,43 @@
                 <label for="feedback1">Do you have any additional questions or requests?</label>
                 <textarea name="feedback1" id="feedback1" cols="30" rows="7"></textarea>
             </div>
-            <input type="submit" name="send" id="submit" value="Submit" class="button">
+            <input type="submit" name="send" id="submit" value="Submit" class="button" onclick="validateForm()">
+        </form>
     </div>
-    </form>
-    </div>
+    <!-- <script>
+        // Function to display window alert when submit button is clicked
+        document.getElementById('submit').addEventListener('click', function(event) {
+            // Prevent the default form submission
+            event.preventDefault();
+            // Check if all required fields are filled
+            if (validateForm()) {
+                // Display window alert for successful submission
+                alert("Thank you for your feedback!");
+                // Redirect to the homepage
+                window.location.href = "../html_page/home_page.html"; // Adjust the URL as needed
+            } else {
+                // Display window alert for missing required fields
+                alert("Please fill out all required fields.");
+            }
+        });
+    
+        // Function to validate form fields
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var option1 = document.querySelector('input[name="option1"]:checked');
+            var option2 = document.querySelector('input[name="option2"]:checked');
+            var updates = document.getElementById('updates').value;
+    
+            // Check if all required fields are filled
+            if (name === "" || email === "" || !option1 || !option2 || updates === "") {
+                return false;
+            }
+            return true;
+        }
+    </script> -->
+       
 </body>
+<!-- <script>window.alert('fuck you')</script> -->
 
 </html>

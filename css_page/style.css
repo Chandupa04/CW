@@ -36,7 +36,7 @@
 }
 
 header {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     width: 100%;
@@ -105,7 +105,8 @@ header .logo {
 }
 
 .fishimage {
-    margin-top: 10%;
+    /* margin-top: 200px; */
+    padding-top: 100px;
     padding-left: 1%;
     width: 45%;
     height: 50%;
@@ -127,7 +128,7 @@ p {
 }
 
 .col {
-    padding-top: 200px;
+    padding-top: 40px;
     padding-left: 200px;
     /* padding-right: 100px; */
     flex-basis: 50%;
